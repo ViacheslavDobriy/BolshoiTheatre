@@ -1,3 +1,5 @@
+@import 'vars';
+@import 'text-format';
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +10,66 @@ a {
     text-decoration: none;
 }
 
+.center {
+    padding-left: calc(50% - 400px);
+    padding-right: calc(50% - 400px);
+}
+
 .landing {
     background-image: url(img/landing/background.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    &__header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        padding-top: 10vh;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    &__about {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    &__title {
+        @include text-format(30px, 36px, $white);
+    }
+    &__text {
+        @include text-format(12px, 16px, $white);
+    }
+    &__slider {
+        position: relative;
+        z-index: 1;
+    }
+    &__broshure {
+
+    }
+    &__broshure-back {
+        position: absolute;
+        top: 4%;
+        left: 1.5%;
+        z-index: -1;
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    &__link {
+        @include text-format(14px, 18px, $white);
+        text-transform: capitalize;
+    }
+}
+
+.phone {
+    @include text-format(14px, 18px, $white);
 }
