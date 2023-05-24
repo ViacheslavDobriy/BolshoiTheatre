@@ -1,0 +1,10 @@
+@mixin text-format($ff, $fs, $lh, $color) {
+    @if ($ff == 'Sans') {
+        font-family: 'Open Sans';
+    } @else {
+        font-family: 'Open Sans Condensed';
+    }
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+}
