@@ -1,3 +1,87 @@
+.background {
+  background-color: #333333;
+}
+
+.center-content {
+  padding-left: 21vw;
+  padding-right: 21vw;
+}
+
+.gold-text {
+  color: #D1A954;
+}
+
+.about-theatre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  gap: 100px;
+}
+.about-theatre__title {
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed";
+  font-size: 48px;
+  line-height: 65px;
+  color: #FFFFFF;
+}
+.about-theatre__content {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.about-theatre__left {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 23vw;
+}
+.about-theatre__subtitle {
+  font-family: "Open Sans Condensed";
+  font-size: 18px;
+  line-height: 29px;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about-theatre__text {
+  font-family: "Open Sans";
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+.about-theatre__middle {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about-theatre__box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.about-theatre__box_text {
+  font-family: "Open Sans Condensed";
+  font-size: 15px;
+  line-height: 22px;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.about-theatre__right {
+  align-self: center;
+}
+.about-theatre__image {
+  max-width: 18vw;
+}
+
+.our-production {
+  padding-top: 150px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -42,6 +126,12 @@ a {
   display: flex;
   flex-direction: column-reverse;
   gap: 2.87vh;
+}
+.landing__network {
+  transition: 0.5s;
+}
+.landing__network:hover svg path {
+  fill: #D1A954;
 }
 .landing__line {
   min-height: 7.65vh;
@@ -107,6 +197,7 @@ a {
   max-width: 160px;
   min-height: 50px;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 .landing__slider {
   position: relative;
@@ -142,9 +233,20 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .landing__pagination_left svg {
   width: 2vw;
+}
+.landing__pagination_left svg path {
+  transition: 0.5s;
+}
+.landing__pagination_left:hover {
+  color: #D1A954;
+}
+.landing__pagination_left:hover svg path {
+  fill: #D1A954;
 }
 .landing__pagination_right {
   min-width: 5.625vw;
@@ -159,9 +261,20 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: 0.5s;
+  cursor: pointer;
 }
 .landing__pagination_right svg {
   width: 2vw;
+}
+.landing__pagination_right svg path {
+  transition: 0.5s;
+}
+.landing__pagination_right:hover {
+  color: #D1A954;
+}
+.landing__pagination_right:hover svg path {
+  fill: #D1A954;
 }
 
 .menu {
@@ -176,6 +289,10 @@ a {
   color: #FFFFFF;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  transition: 0.5s;
+}
+.menu__link:hover {
+  color: #D1A954;
 }
 
 .phone {
