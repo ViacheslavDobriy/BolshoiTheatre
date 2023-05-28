@@ -1,0 +1,80 @@
+.background {
+    background-color: $darkGray;
+}
+
+.center-content {
+    padding-left: 21vw;
+    padding-right: 21vw;
+}
+
+.gold-text {
+    color: $gold;
+}
+
+.about-theatre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+    gap: 100px;
+
+    &__title {
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        @include text-format('Sans C', 48px, 65px, $white);
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 23vw;
+    }
+
+    &__subtitle {
+        @include text-format('Sans C', 18px, 29px, $white);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include text-format('Sans', 14px, 21px, $white);
+    }
+
+    &__middle {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &_text {
+            @include text-format('Sans C', 15px, 22px, $white);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+    }
+
+    &__right {
+        align-self: center;
+    }
+
+    &__image {
+        max-width: 18vw;
+    }
+}
+
+.our-production {
+    padding-top: 150px;
+}

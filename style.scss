@@ -1,5 +1,6 @@
 @import 'vars';
 @import 'text-format';
+@import 'content';
 
 * {
     margin: 0;
@@ -47,6 +48,13 @@ a {
         display: flex;
         flex-direction: column-reverse;
         gap: 2.87vh;
+    }
+
+    &__network {
+        transition: 0.5s;
+        &:hover svg path {
+            fill: $gold;
+        }
     }
 
     &__line {
@@ -107,6 +115,7 @@ a {
         max-width: 160px;
         min-height: 50px;
         letter-spacing: 0.1em;
+        cursor: pointer;
     }
 
     &__slider {
@@ -143,8 +152,19 @@ a {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            transition: 0.5s;
+            cursor: pointer;
             svg {
                 width: 2vw;
+            }
+            svg path {
+                transition: 0.5s;
+            }
+            &:hover {
+                color: $gold;
+            }
+            &:hover svg path {
+                fill: $gold;
             }
         }
 
@@ -158,8 +178,19 @@ a {
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            transition: 0.5s;
+            cursor: pointer;
             svg {
                 width: 2vw;
+            }
+            svg path {
+                transition: 0.5s;
+            }
+            &:hover {
+                color: $gold;
+            }
+            &:hover svg path {
+                fill: $gold;
             }
         }
     }
@@ -174,6 +205,10 @@ a {
         @include text-format('Sans C', 14px, 18px, $white);
         text-transform: uppercase;
         letter-spacing: 0.1em;
+        transition: 0.5s;
+        &:hover {
+            color: $gold;
+        }
     }
 }
 
