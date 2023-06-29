@@ -3,8 +3,8 @@
 }
 
 .center-content {
-  padding-left: 21vw;
-  padding-right: 21vw;
+  margin-left: 21vw;
+  margin-right: 21vw;
 }
 
 .gold-text {
@@ -84,7 +84,7 @@
   justify-content: center;
   align-items: center;
   padding-top: 150px;
-  gap: 100px;
+  padding-bottom: 150px;
 }
 .our-production__title {
   text-align: center;
@@ -100,6 +100,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
 }
 .our-production__item {
   filter: brightness(0.33);
@@ -107,6 +108,11 @@
   min-height: 450px;
   background-size: contain;
   background-repeat: no-repeat;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.our-production__item:hover {
+  filter: brightness(1);
 }
 .our-production__text-box {
   padding: 40px;
@@ -121,9 +127,8 @@
   font-style: normal;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: #FFFFFF;
   font-family: "Open Sans Condensed";
-  font-size: 24px;
+  font-size: 22px;
   line-height: 33px;
   color: #FFFFFF;
 }
@@ -155,6 +160,38 @@
 
 #product4 {
   background-image: url(img/mainContent/our-production/May.png);
+}
+
+.rating {
+  background-image: url(img/mainContent/rating/theatre.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  gap: 103px;
+  padding: 126px 95px 126px 190px;
+}
+.rating__year {
+  font-weight: 700;
+  letter-spacing: 7.2px;
+  font-family: "Open Sans Condensed";
+  font-size: 62px;
+  line-height: normal;
+  color: #D1A954;
+}
+.rating__text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+.rating__text {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-size: 21px;
+  line-height: 120%;
+  color: #FFFFFF;
 }
 
 * {

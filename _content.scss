@@ -3,8 +3,8 @@
 }
 
 .center-content {
-    padding-left: 21vw;
-    padding-right: 21vw;
+    margin-left: 21vw;
+    margin-right: 21vw;
 }
 
 .gold-text {
@@ -72,7 +72,7 @@
     justify-content: center;
     align-items: center;
     padding-top: 150px;
-    gap: 100px;
+    padding-bottom: 150px;
     &__title {
         text-align: center;
         letter-spacing: 0.1em;
@@ -84,6 +84,7 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
+        padding-top: 100px;
     }
     &__item {
         filter: brightness(0.33);
@@ -91,6 +92,11 @@
         min-height: 450px;
         background-size: contain;
         background-repeat: no-repeat;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            filter: brightness(1);
+        }
     }
     &__text-box {
         padding: 40px;
@@ -105,8 +111,7 @@
         font-style: normal;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: #FFFFFF;
-        @include text-format('Open Sans C', 24px, 33px, $white)
+        @include text-format('Open Sans C', 22px, 33px, $white);
     }
     &__text {
         transform: rotate(270deg);
@@ -134,4 +139,32 @@
 
 #product4 {
     background-image: url(img/mainContent/our-production/May.png);
+}
+
+.rating {
+    background-image: url(img/mainContent/rating/theatre.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    gap: 103px;
+    padding: 126px 95px 126px 190px;
+    &__years {}
+    &__year {
+        font-weight: 700;
+        letter-spacing: 7.2px;
+        @include text-format('Sans C', 62px, normal, $gold);
+    }
+    &__text-box {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__stars {}
+    &__text {
+        font-weight: 700;
+        @include text-format('Sans', 21px, 120%, $white);
+    }
 }
