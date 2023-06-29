@@ -1,7 +1,6 @@
 @import 'vars';
 @import 'text-format';
 @import 'content';
-
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +14,6 @@ a {
 .center {
     padding-left: 13vw;
     padding-right: 21vw;
-
     &__content {
         padding-right: 4vw;
     }
@@ -28,7 +26,6 @@ a {
     height: 100vh;
     display: flex;
     flex-direction: row;
-
     &__panel {
         width: 8vw;
         background: rgba(51, 51, 51, 0.75);
@@ -37,7 +34,6 @@ a {
         justify-content: flex-end;
         padding-bottom: 8.2vh;
     }
-
     &__aside-content {
         display: flex;
         flex-direction: column-reverse;
@@ -49,18 +45,15 @@ a {
         flex-direction: column-reverse;
         gap: 2.87vh;
     }
-
     &__network {
         transition: 0.5s;
         &:hover svg path {
             fill: $gold;
         }
     }
-
     &__line {
         min-height: 7.65vh;
     }
-
     &__aside-text {
         transform: rotate(-90deg);
         min-width: max-content;
@@ -69,7 +62,6 @@ a {
         text-transform: uppercase;
         letter-spacing: 0.1em;
     }
-
     &__header {
         display: flex;
         flex-direction: row;
@@ -77,7 +69,6 @@ a {
         padding-top: 51px;
         align-items: center;
     }
-
     &__content {
         display: flex;
         flex-direction: row;
@@ -86,24 +77,20 @@ a {
         align-items: center;
         gap: 20px;
     }
-
     &__about {
         display: flex;
         flex-direction: column;
         gap: 50px;
         max-width: 28.125vw;
     }
-
     &__title {
         @include text-format('Sans C', 50px, 87px, $white);
         text-transform: uppercase;
         letter-spacing: 0.1em;
     }
-
     &__text {
         @include text-format('Sans', 14px, 21px, $white);
     }
-
     &__button {
         @include text-format('Sans', 18px, 25px, $white);
         text-transform: uppercase;
@@ -117,17 +104,14 @@ a {
         letter-spacing: 0.1em;
         cursor: pointer;
     }
-
     &__slider {
         position: relative;
         z-index: 1;
         max-width: 19vw;
     }
-
     &__broshure {
         max-width: 18vw;
     }
-
     &__broshure-back {
         max-width: 18vw;
         position: absolute;
@@ -135,13 +119,11 @@ a {
         left: 1vw;
         z-index: -1;
     }
-
     &__pagination {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         padding-top: 5vh;
-
         &_left {
             min-width: 5.625vw;
             background: none;
@@ -167,7 +149,6 @@ a {
                 fill: $gold;
             }
         }
-
         &_right {
             min-width: 5.625vw;
             background: none;
@@ -200,9 +181,8 @@ a {
     display: flex;
     flex-direction: row;
     gap: 2.6vw;
-
     &__link {
-        @include text-format('Sans C', 14px, 18px, $white);
+        @include text-format('Sans C', 12px, 18px, $white);
         text-transform: uppercase;
         letter-spacing: 0.1em;
         transition: 0.5s;
